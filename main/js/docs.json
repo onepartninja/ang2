@@ -1,0 +1,40 @@
+[
+    {
+        "domain": "UTCCWH",
+        "desc": "Commercial Web Hosting",
+        "URL": "httpblach",
+        "howto": "Fanny pack four dollar toast disrupt, PBR&B kinfolk next level butcher meh mumblecore 90's pug listicle health goth forage. Pug tote bag quinoa, lomo authentic kitsch humblebrag schlitz knausgaard. Ugh put a bird on it four loko,\n\n church-key sustainable bespoke green juice waistcoat poutine plaid vegan. 8-bit distillery bitters portland, neutra venmo shoreditch pickled locavore roof party DIY wayfarers actually cliche artisan. Asymmetrical occupy crucifix farm-to-table leggings. Artisan ennui put a bird on it messenger bag. Tattooed shabby chic gluten-free stumptown tofu.\n Readymade portland ramps viral mumblecore.Semiotics single - origin coffee ethical crucifix",
+        "image1": "/assets/global/img/portfolio/1200x900/16.jpg"
+    },
+    {
+        "domain": "UTCAUS",
+        "desc": "Aerospace US",
+        "URL": "httpblach",
+        "howto": "again",
+        "image1": "/assets/global/img/portfolio/1200x900/18.jpg"
+    },
+    {
+        "domain": "UTCAIN",
+        "desc": "Aerospace Intl",
+        "URL": "httpblach",
+        "howto": "here"
+    },
+    {
+        "domain": "UTCCGL",
+        "desc": "Commercial",
+        "URL": "httpblach",
+        "howto": "here"
+    },
+    {
+        "domain": "UTCGWH",
+        "desc": "Government Web Hosting",
+        "URL": "httpblach",
+        "howto": "here"
+    },
+    {
+        "domain": "CORPUSITAR",
+        "desc": "null",
+        "URL": "httpblach",
+        "howto": "more"
+    }
+]

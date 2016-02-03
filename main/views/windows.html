@@ -1,0 +1,60 @@
+<!-- BEGIN PAGE HEADER-->
+<h3 class="page-title"> Windows
+    <small>requests related to Windows systems</small>
+</h3>
+<div class="page-bar">
+    <ul class="page-breadcrumb">
+        <li>
+            <i class="fa fa-home"></i>
+            <a href="#">Documentation</a>
+            <i class="fa fa-angle-right"></i>
+        </li>
+        <li>
+            <a href="#">Windows</a>
+        </li>
+    </ul>
+</div>
+<!-- END PAGE HEADER-->
+
+<!-- BEGIN FILTER -->
+<div class="page-bar">
+    <input class="form-control input-lg" ng-model="query" placeholder="Search this list">
+</div>
+
+<!-- END FILTER -->
+
+<!-- BEGIN DOC LIST -->
+<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green-sharp">
+            <i class="icon-settings font-green-sharp"></i>
+            <span class="caption-subject bold uppercase">Documents</span>
+            <span class="caption-helper">search or make a selection below</span>
+        </div>
+    </div>
+    <div class="portlet-body">
+        <div class="row">
+
+            <div ng-controller="WindowsController">
+
+
+                <uib-accordion close-others="oneAtATime">
+                    <uib-accordion-group heading="{{doc.domain}} - {{doc.desc}}" ng-repeat="doc in docs | filter:query | orderBy: 'domain'">
+                        <pre>URL: <a href="{{doc.URL}}" target="_blank">{{doc.URL}}</a></pre>
+                        <pre>{{doc.howto}}</pre>
+                        <!--going to table the ng-click until deemed necessary to zoom-->
+                        <img ng-click="#open('lg')" src="{{doc.image1}}" class="img-responsive img-rounded" id="image1">
+                        <modal title="Test" visible="showModal">
+                        </modal>
+                        <!--modal end-->
+
+                    </uib-accordion-group>
+                </uib-accordion>
+            </div>
+            <div ng-controller="WithAjaxCtrl as showCase">
+                <table datatable="" dt-options="showCase.dtOptions" dt-columns="showCase.dtColumns" class="row-border hover"></table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END DOC LIST -->
